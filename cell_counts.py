@@ -41,7 +41,7 @@ def plot_cell_type(cell_type):
     sm = plt.cm.ScalarMappable(cmap="coolwarm", norm=plt.Normalize(vmin=0, vmax=1))
     #plt.colorbar(sm, label="P-value (Significance)")
      # Save the figure as a PDF
-    pdf_filename = f"{cell_type.replace('+', 'pos').replace(' ', '_')}_cellcounts_unsorted.pdf"
+    pdf_filename = f"./data/{cell_type.replace('+', 'pos').replace(' ', '_')}_cellcounts_unsorted.pdf"
     plt.savefig(pdf_filename, format="pdf", bbox_inches="tight")
     plt.close() 
 

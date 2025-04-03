@@ -15,7 +15,7 @@ plt.ylabel("Frequency")
 plt.title("CDR3 Length Distribution")
 
 # Save the figure as a PDF
-plt.savefig("cdr3_length_distribution_NSCLC4.pdf", format="pdf", bbox_inches="tight")
+plt.savefig("./data/cdr3_length_distribution_NSCLC4.pdf", format="pdf", bbox_inches="tight")
 plt.close() 
 
 # Load TRUST4 output NSCLC 3
@@ -32,5 +32,5 @@ plt.ylabel("Frequency")
 plt.title("CDR3 Length Distribution")
 
 # Save the figure as a PDF
-plt.savefig("cdr3_length_distribution_NSCLC3.pdf", format="pdf", bbox_inches="tight")
+plt.savefig("./data/cdr3_length_distribution_NSCLC3.pdf", format="pdf", bbox_inches="tight")
 plt.close() 

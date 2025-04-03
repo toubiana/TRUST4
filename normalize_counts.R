@@ -26,4 +26,4 @@ dds <- DESeqDataSetFromMatrix(countData = raw_counts, colData = sample_info, des
 dds <- estimateSizeFactors(dds)
 normalized_counts <- counts(dds, normalized = TRUE) 
 # store data
-write.csv(normalized_counts,"./normalized_counts.csv")
+write.csv(normalized_counts,"./data/normalized_counts.csv")

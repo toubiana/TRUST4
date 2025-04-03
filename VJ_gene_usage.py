@@ -19,7 +19,7 @@ plt.ylabel("Count")
 plt.title("V Gene Usage")
 
 # Save plot as a PDF
-plt.savefig("NSCLC4_vj_gene_usage.pdf", format="pdf", bbox_inches="tight")
+plt.savefig("./data/NSCLC4_vj_gene_usage.pdf", format="pdf", bbox_inches="tight")
 
 print("Plot saved as vj_gene_usage.pdf")
 
@@ -40,6 +40,6 @@ plt.ylabel("Count")
 plt.title("V Gene Usage")
 
 # Save plot as a PDF
-plt.savefig("NSCLC3_vj_gene_usage.pdf", format="pdf", bbox_inches="tight")
+plt.savefig("./data/NSCLC3_vj_gene_usage.pdf", format="pdf", bbox_inches="tight")
 
 print("Plot saved as vj_gene_usage.pdf")
