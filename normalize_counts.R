@@ -1,9 +1,9 @@
 
 library(DESeq2)
 
-gene_counts <- read.delim("./GSE211044_bulkRNAseq_counts.txt")
+gene_counts <- read.delim("./data/data_for_trust4/GSE211044_bulkRNAseq_counts.txt")
 
-# copy to local vriable
+# copy to local variable
 raw_counts <- gene_counts
 # deleting unnecessary columns
 raw_counts$Chr <- NULL; raw_counts$Start <- NULL; raw_counts$End <- NULL;
