@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load TRUST4 output NSCLC4
-df = pd.read_csv("./trust4_output/NSCLC4_report.tsv", sep="\t")
+df = pd.read_csv("./data/trust4_output/NSCLC4_report.tsv", sep="\t")
 
 # Count occurrences of each V gene
 v_usage = df["V"].value_counts()
@@ -24,7 +24,7 @@ plt.savefig("NSCLC4_vj_gene_usage.pdf", format="pdf", bbox_inches="tight")
 print("Plot saved as vj_gene_usage.pdf")
 
 # Load TRUST4 output NSCLC4
-df = pd.read_csv("./trust4_output/NSCLC3_report.tsv", sep="\t")
+df = pd.read_csv("./data/trust4_output/NSCLC3_report.tsv", sep="\t")
 
 # Count occurrences of each V gene
 v_usage = df["V"].value_counts()

@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load TRUST4 output NSCLC 4
-df = pd.read_csv("./trust4_output/NSCLC4_report.tsv", sep="\t")
+df = pd.read_csv("./data/trust4_output/NSCLC4_report.tsv", sep="\t")
 
 # Compute CDR3 lengths
 df["CDR3_length"] = df["CDR3aa"].str.len()
@@ -19,7 +19,7 @@ plt.savefig("cdr3_length_distribution_NSCLC4.pdf", format="pdf", bbox_inches="ti
 plt.close() 
 
 # Load TRUST4 output NSCLC 3
-df = pd.read_csv("./trust4_output/NSCLC3_report.tsv", sep="\t")
+df = pd.read_csv("./data/trust4_output/NSCLC3_report.tsv", sep="\t")
 
 # Compute CDR3 lengths
 df["CDR3_length"] = df["CDR3aa"].str.len()

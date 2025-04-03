@@ -4,8 +4,8 @@ import numpy as np
 import seaborn as sns
 
 # Load the data from CSV files
-norm_data = pd.read_csv("normalized_cell_counts.csv", index_col=0)  # Rows: Cell types, Cols: Samples
-p_values = pd.read_csv("pvalues_cell_counts.csv", index_col=0)  # Same structure
+norm_data = pd.read_csv("./data/normalized_cell_counts.csv", index_col=0)  # Rows: Cell types, Cols: Samples
+p_values = pd.read_csv("./data/pvalues_cell_counts.csv", index_col=0)  # Same structure
 
 # Extract specific cell types
 cell_types = ["CD8+ T-cells", "NK cells"]
